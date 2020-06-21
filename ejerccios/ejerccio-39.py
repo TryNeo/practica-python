@@ -14,24 +14,41 @@ c) Calcular y mostrar el tiempo promedio entre todos los ciclistas .
  
 
 
+
 def main():
 	print('\tEjerccio 39')
 	print()
-
+	
 	intCompetidores = int(input('competidores:'))
-	intRecord = int(input("record:"))
-	TIEMPO_FIJO = 10
+	intContador = 0
+	intAcumulado = 0
+	TIEMPO_FIJO = 20
+
 	for i in range(0,intCompetidores):
 		strNombre = input("ingrese nombre de competidor:\n")
 		intTiempo_carrera = int(input("tiempo:"))
 		if intTiempo_carrera>= TIEMPO_FIJO:
-			print(f"El ganador es : {strNombre}")
-			if intTiempo_carrera < intRecord:
-				print("No Rompistes el record")
-			else:
-				print("Rompistes el record")
+			print(f'Eres uno de los Ganadores\n{strNombre}')
 		else:
-			print(f"No Eres el Ganador:{strNombre}")
+			print(f'No eres ganador:{strNombre}')
+
+		intContador +=1
+		intAcumulado += intTiempo_carrera
+
+	if intCompetidores > 0:
+		intRecord = int(input("record:"))
+		if intTiempo_carrera < intRecord:
+			if intContador > 0:
+				intPromedio = round(intAcumulado/intContador,2)
+			else:
+				pass
+			print(f"Tiempo promedio:{intPromedio}") 
+		else:
+			print("No hay un record Roto")
+	else:
+		print("ERROR")
+
+
 
 
 if __name__ == '__main__':
