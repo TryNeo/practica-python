@@ -6,7 +6,7 @@
 Escribir un programa que pregunte al usuario:
 
 1.su nombre, y luego lo salude.
-2.dos números y luego muestre el producto.
+2.dos númaeros y luego muestre el producto.
 
 """
 
