@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# 
 from PIL import Image, ImageDraw, ImageFont
 """
 Hace un par de días lanzamos en la plataforma el apartado de Recursos, un lugar donde podrás encontrar tanto artículos como vídeos de temas muy puntales sobre Python.
@@ -35,6 +38,7 @@ def thumbnail(hexa,titulo):
 		crea_imagen.save(imagen+'.png')
 
 def main():
+	print("Ejerccio 55")
 	hexa = input("Ingresa un color hexadecimal:")
 	titulo = input("Ingresa el titulo de la imagen:")
 	thumbnail(hexa,titulo)
