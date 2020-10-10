@@ -21,7 +21,7 @@ def max_min(value):
 
 def main():
     print("\tEjerccio 59")
-    print()
+    print("")
     n = int(input("ingrese un numero:"))
     resultado = max_min(n)
     print(resultado)
