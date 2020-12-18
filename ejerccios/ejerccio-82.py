@@ -52,10 +52,10 @@ def carreras(jugador_1,jugador_2):
                     if press_enter == "1":
                         tablero_1 = dados(tablero_1)
                         print(f"Avanza {tablero_1}")
-                        if tablero_1 > 50:
+                        if tablero_1 >= 50:
                             print(f"Jugador {jugador_1} Gano")
                             break
-                       time.sleep(2)
+                        time.sleep(2)
                         clear()
                     
                     print("\tJugador 2 tira")                                                
@@ -63,7 +63,7 @@ def carreras(jugador_1,jugador_2):
                     if press_enter == "2":
                         tablero_2 = dados(tablero_2)
                         print(f"Avanza {tablero_2}")
-                        if tablero_2 > 50:
+                        if tablero_2 >= 50:
                             print(f"Jugador {jugador_2} Gano")
                             break
                         time.sleep(2)
