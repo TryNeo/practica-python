@@ -1,3 +1,5 @@
+#!/bin/python
+
 """
 Para el Homenaje a Michael Jackson, más de 1,6 millones de seguidores se registraron en Internet para participar en el sorteo de entradas para asistir a
  la ceremonia en estadio “Staples Center”, y solo 8.750 participantes serian seleccionados para asistir.
