@@ -30,9 +30,9 @@ def verificadorCedula(cedula):
     if total == 10:
         total = 0
     if total-(sum(a)+sum(b)) == ultimo_digito:
-        return f'Cedula Valida'
+        return True
     else:
-        return f'Cedula No valida'
+        return False
 def main():
     cedulas = ['0909407173','0996576155','0915336085','0926579640','0936574891']
     for cedula in cedulas:
