@@ -37,7 +37,7 @@ def main():
     cedulas = ['0909407173','0996576155','0915336085','0926579640','0936574891']
     for cedula in cedulas:
         resultado = verificadorCedula(cedula)
-        print(resultado)
+        print(f"cedula:{cedula} valida:{resultado}")
 
 if __name__ == "__main__":
     main()
